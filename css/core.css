@@ -1,0 +1,203 @@
+/* ################################## */
+            /*Imports*/
+/* ################################## */
+@import url(responsive.css);
+/* ################################## */
+            /*Imports*/
+/* ################################## */
+
+/* ################################## */
+            /*Fonts*/
+/* ################################## */
+@import url(fonts/);
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* ################################## */
+            /*Fonts*/
+/* ################################## */
+
+/* ################################## */
+            /*Plugins*/
+/* ################################## */
+/* Banner cookies */
+@import url(plugins/cookies.css);
+/* ################################## */
+            /*Plugins*/
+/* ################################## */
+
+/* Default */
+*,*::after,*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none !important;
+}
+/* Default */
+
+/* SELECTION para ACTIVAR DEBES DESCOMENTAR */
+::selection {
+  display: none;
+}
+/* SELECTION */
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  display: none;
+}
+/* SCROLLBAR */
+
+/* HTML */
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+/* HTML */
+
+/* Body */
+body {
+  background-color: #000;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+header {
+  display: flex;
+}
+
+.logo-container {
+  width: 10%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 25px;
+}
+
+.menu-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 25px;
+}
+
+.logo-menu-container {
+  width: 10%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 25px;
+}
+/* Header End*/
+
+/* Content Container1 */
+.content-container1 {
+  width: 100%;
+  height: 1000px;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -40px;
+}
+.title-container h2 {
+  font-weight: 100;
+  font-size: 150px;
+  margin-bottom: -35px;
+}
+.title-container h1 {
+  font-weight: 700;
+  font-size: 160px;
+  margin-top: -35px;
+}
+
+.subtitle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px;
+  padding-left: 980px;
+  font-size: 30px;
+}
+.subtitle-container p {
+  margin: 2px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+.img-container img {
+  max-width: 100%;
+  margin-top: 40px
+}
+/* Content Container1 End */
+
+/* Body */
+
+/* Fixed's */
+  /* Top */
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  /* Top */
+  /* Top right */
+  .fixed-top-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+  }
+  /* Top right */
+  /* Top left */
+  .fixed-top-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  /* Top left */
+
+  /* Bottom */
+  .fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  /* Bottom */
+  /* Bottom right */
+  .fixed-bottom-right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+  }
+  /* Bottom right */
+  /* Bottom left */
+  .fixed-bottom-left {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+  }
+  /* Bottom left */
+/* Fixed's */
