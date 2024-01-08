@@ -140,13 +140,49 @@ header {
 .img-container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .img-container img {
   width: 60%;
   margin-top: 40px
 }
+.img-container-par {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  font-size: 80px;
+  position: absolute;
+  margin-top: 900px;
+}
+.img-container-par p {
+  margin: -20px;
+}
+
+.par-container1 {
+  display: flex;
+  justify-content: space-around;
+  margin: 600px 250px 0px 250px;
+  font-size: 20px;
+  color: #777777;
+}
+.par-container1-p {
+  color: #bdbdbd
+}
+.par-container1-learnmore {
+  color: #fff;
+  margin-top: 25px;
+}
 /* Content Container1 End */
 
+/* Content Container2 */
+.content-container2 {
+  width: 100%;
+  height: 500px;
+  background-color: aqua;
+}
+/* Content Container2 End */
 /* Body */
 
 /* Fixed's */
