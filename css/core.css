@@ -179,8 +179,82 @@ header {
 /* Content Container2 */
 .content-container2 {
   width: 100%;
-  height: 500px;
-  background-color: aqua;
+  height: 2000px;
+}
+
+.content-container2-img {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 250px;
+}
+
+.content-container2-large-img img {
+  height: 800px;
+  width: 580px;
+  object-position: center;
+  object-fit: cover;
+}
+.large-img-par {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px
+}
+.large-img-par2 {
+  color: #777;
+  font-size: 14px;
+}
+
+.content-container2-small-img {
+  display: flex;
+}
+.content-container2-small-img div {
+  margin: 25px;
+}
+.small-img1 img {
+  height: 420px;
+  width: 280px;
+  object-position: center;
+  object-fit: cover;
+}
+.small-img2 img {
+  height: 420px;
+  width: 280px;
+  object-position: center;
+  object-fit: cover;
+}
+.small-img-par2 {
+  margin-top: 5px;
+  color: #777;
+  font-size: 14px;
+}
+
+.content-container2-btnview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.content-container2-btnview p {
+  font-size: 35px;
+}
+.btnview-par1 {
+  font-weight: lighter;
+  margin-bottom: -5px;
+}
+.btnview-par2 {
+  font-weight: bolder;
+  margin-top: -5px;
+}
+.content-container2-btnview button {
+  background: transparent;
+  border-radius: 30px;
+  border: solid #fff;
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  margin-top: 30px;
 }
 /* Content Container2 End */
 /* Body */
