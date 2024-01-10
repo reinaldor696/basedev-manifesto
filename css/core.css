@@ -179,7 +179,8 @@ header {
 /* Content Container2 */
 .content-container2 {
   width: 100%;
-  height: 2000px;
+  height: auto;
+  margin-bottom: 120px;
 }
 
 .content-container2-img {
@@ -257,6 +258,77 @@ header {
   margin-top: 30px;
 }
 /* Content Container2 End */
+
+/* Content Container */
+.content-container3 {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  color: #000;
+}
+
+.content-our-service{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.our-service  {
+  display: flex;
+  justify-content: center;
+  margin: 120px 0px 120px 0px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.our-service-list {
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+  margin-bottom: -40px;
+}
+.list-separation-right {
+  margin-right: 8px;
+  font-weight: lighter;
+}
+.list-separation-left {
+  margin-left: 8px;
+  font-weight: bolder;
+}
+
+.short-tip {
+  display: flex;
+  justify-content: space-around;
+  margin: 250px 0px 250px 0px;
+}
+.short-quick-tip {
+  display: flex;
+}
+.short-quick-tip-par {
+  opacity: 0.5;
+}
+.short-tip-content1 {
+  font-size: 40px;
+}
+.par-our-project {
+  margin-left: 40px;
+}
+.short-tip-content1 p {
+  margin-top: -20px;
+  font-weight: bolder;
+
+}
+.short-tip-content2 {
+  margin-left: -117px;
+}
+/* Content Container3 End */
+
+/* Content Container4 */
+.content-container4 {
+  width: 100%;
+  height: 2500px;
+  background-color: black;
+}
+/* Content Container4 End */
+
 /* Body */
 
 /* Fixed's */
