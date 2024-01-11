@@ -325,7 +325,7 @@ header {
 /* Content Container4 */
 .content-container4 {
   width: 100%;
-  height: 2500px;
+  height: auto;
   background-color: black;
 }
 
@@ -375,8 +375,57 @@ header {
 #line-fix {
   border: none;
 }
-
 /* Content Container4 End */
+
+/* Footer */
+.footer-container {
+  width: 100%;
+  height: auto;
+}
+
+.footer-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 170px;
+}
+.footer-title h1 {
+  font-size: 130px;
+}
+.footer-title1 {
+  font-weight: lighter;
+  margin-bottom: -35px;
+}
+.footer-title2 {
+  font-weight: bolder;
+  margin-top: -35px;
+}
+.footer-title p {
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+  padding-bottom: 50px
+}
+.arrow-icon {
+  display: flex;
+  margin-left: 80px;
+}
+.share-icon {
+  display: flex;
+  margin-right: 80px;
+}
+.arrow-container {
+  margin-right: 25px;
+}
+.share-container {
+  margin-left: 25px;
+}
+/* Footer End */
 
 /* Body */
 
