@@ -144,8 +144,11 @@ header {
   align-items: center;
 }
 .img-container img {
-  width: 60%;
-  margin-top: 40px
+  width: 30%;
+  margin-top: 100px;
+  height: 1060px;
+  object-position: center;
+  object-fit: cover;
 }
 .img-container-par {
   display: flex;
@@ -154,7 +157,7 @@ header {
   font-weight: 700;
   font-size: 80px;
   position: absolute;
-  margin-top: 900px;
+  margin-top: 1600px;
 }
 .img-container-par p {
   margin: -20px;
@@ -331,8 +334,9 @@ header {
 
 .container4-title {
   display: flex;
-  font-size: 68px;
-  margin: 125px 0px 125px 0px; 
+  font-size: 60px;
+  margin: 125px 0px 125px 0px;
+  justify-content: center; 
 }
 .title1 {
   font-weight: lighter;

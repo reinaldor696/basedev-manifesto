@@ -4,13 +4,12 @@ Init ScrollTrigger // Inicio de ScrollTrigger
 const tl = gsap.timeline({
 scrollTrigger: {
     trigger: ".trigger",
-    start: "top top",
-    end: "+=1000",
+    start: "660 top",
+    end: "+=1500",
     scrub: 1,
     pin: true,
     markers: true
 }
 });
-tl.to(".box", {yPercent: 350, duration: 1})
-tl.to(".box", {rotation: 360, duration: 3})
-tl.to(".box", {xPercent: 350, duration: 1})
+tl.to("#img", {width: '100%', duration: 1})
+tl.to("#img", {opacity: '0.2', duration: 3})
