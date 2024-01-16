@@ -1,23 +1,81 @@
 /*------------------------------
 Init ScrollTrigger // Inicio de ScrollTrigger
 ------------------------------*/
-const tl = gsap.timeline({
+gsap.to(".logo-container img", {
+    opacity: 1,
+    duration: 1.5,
+    delay: 0.3
+});
+
+gsap.to(".menu-container h2", {
+    opacity: 1,
+    duration: 1.5,
+    delay: 0.3
+});
+gsap.to(".logo-menu-container img", {
+    opacity: 1,
+    duration: 1.5,
+    delay: 0.3
+});
+
+gsap.to(".title-container h2", {
+    opacity: 1,
+    y: "-15%",
+    duration: 1.5,
+    delay: 0.3
+});
+
+
+gsap.to(".title-container h1", {
+    opacity: 1,
+    y: "-15%",
+    duration: 1.5,
+    delay: 0.5
+});
+
+
+gsap.to(".par1", {
+    y: "-60%",
+    duration: 1,
+    opacity: 1,
+    delay: 0.3
+});
+gsap.to(".par2", {
+    y: "-60%",
+    duration: 1,
+    opacity: 1,
+    delay: 0.4
+});
+gsap.to(".par3", {
+    y: "-60%",
+    duration: 1,
+    opacity: 1,
+    delay: 0.5
+});
+
+gsap.to(".img-container img", {
+    duration: 1,
+    opacity: 1,
+    delay:0.6
+});
+
+const tl1 = gsap.timeline({
 scrollTrigger: {
     trigger: ".img-container",
     start: "200 top",
-    end: "bottom",
-    scrub: 1,
+    end: "bottom top",
+    scrub: true,
     pin: true,
     markers: true
 }
 });
-tl.to("#img", {   
+tl1.to("#img", {   
     position: 'center',
     width: '100%', 
     duration: 1,
 })
 
-tl.to(".img-container-par", {
+tl1.to(".img-container-par", {
     y: '-600px', 
     duration: 1
 }, '-=0.9')
@@ -26,9 +84,10 @@ gsap.to(".img-container-par p", {
     backgroundPositionX: "0%",
     stagger: 1,
     scrollTrigger: {
-        trigger: ".img-container-par p",
-        start: "top center",
-        end: "bottom top",
-        scrub: 1
+        trigger: ".img-container-par",
+        start: "-50 90%",
+        end: "800 90%",
+        scrub: true,
+        markers: true
     }
 })

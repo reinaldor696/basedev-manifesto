@@ -79,6 +79,9 @@ header {
   justify-content: flex-end;
   padding: 25px;
 }
+.logo-container img {
+  opacity: 0;
+}
 
 .menu-container {
   width: 100%;
@@ -87,6 +90,9 @@ header {
   align-items: center;
   justify-content: flex-end;
   padding: 25px;
+}
+.menu-container h2 {
+  opacity: 0;
 }
 
 .logo-menu-container {
@@ -97,6 +103,9 @@ header {
   justify-content: flex-start;
   padding: 25px;
   margin-top: 8px;
+}
+.logo-menu-container img {
+  opacity: 0;
 }
 /* Header End*/
 
@@ -116,11 +125,13 @@ header {
   font-weight: 100;
   font-size: 150px;
   margin-bottom: -35px;
+  opacity: 0;
 }
 .title-container h1 {
   font-weight: 700;
   font-size: 160px;
   margin-top: -35px;
+  opacity: 0;
 }
 
 .subtitle-container {
@@ -135,6 +146,16 @@ header {
   margin: 2px;
   font-size: 30px;
   font-weight: 400;
+
+}
+.par1{
+  opacity: 0;
+}
+.par2 {
+  opacity: 0;
+}
+.par3 {
+  opacity: 0;
 }
 
 .img-container {
@@ -149,6 +170,7 @@ header {
   height: 1060px;
   object-position: center;
   object-fit: cover;
+  opacity: 0;
 }
 .img-container-par {
   display: flex;
@@ -164,7 +186,7 @@ header {
   background: linear-gradient(
     to right,
     rgb(255, 255, 255) 50%,
-    rgb(37, 37, 37) 50%
+    rgba(37, 37, 37, 0.671) 50%
   );
   background-size: 200% 100%;
   background-position-x: 100%;
