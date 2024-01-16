@@ -96,10 +96,8 @@ const tl2 = gsap.timeline({
         start: "-=50 700",
         end: "bottom 700",
         scrub: true,
-        markers: true,
     }
-})
-
+});
 tl2.to("#par-2023", {
     stagger: 0.3,
     backgroundPositionX: "0%"
@@ -112,3 +110,19 @@ tl2.to("#par-par", {
     stagger: 0.3,
     backgroundPositionX: "0%"
 }, '-= 1');
+
+gsap.to(".par-container1-learnmore p", {
+    scrollTrigger: {
+        trigger: ".par-container1-learnmore p",
+        start: "0 700",
+        end: "400 700",
+    },
+    opacity: 1,
+    y: '-50%'
+})
+/*
+const tl3 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ""
+    }
+}); */

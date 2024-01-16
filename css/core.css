@@ -243,7 +243,10 @@ header {
 }
 .par-container1-learnmore {
   color: #fff;
-  margin-top: 25px;
+  margin-top: 50px;
+}
+.par-container1-learnmore p {
+  opacity: 0;
 }
 /* Content Container1 End */
 
