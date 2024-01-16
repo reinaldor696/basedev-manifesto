@@ -66,14 +66,13 @@ scrollTrigger: {
     end: "bottom top",
     scrub: true,
     pin: true,
-    markers: true
 }
 });
 tl1.to("#img", {   
     position: 'center',
     width: '100%', 
     duration: 1,
-})
+});
 
 tl1.to(".img-container-par", {
     y: '-600px', 
@@ -88,6 +87,28 @@ gsap.to(".img-container-par p", {
         start: "-50 90%",
         end: "800 90%",
         scrub: true,
-        markers: true
+    }
+});
+
+const tl2 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".par-container1",
+        start: "-=50 700",
+        end: "bottom 700",
+        scrub: true,
+        markers: true,
     }
 })
+
+tl2.to("#par-2023", {
+    stagger: 0.3,
+    backgroundPositionX: "0%"
+});
+tl2.to("#par-portfolio", {
+    stagger: 0.3,
+    backgroundPositionX: "0%"
+}, '-= 1');
+tl2.to("#par-par", {
+    stagger: 0.3,
+    backgroundPositionX: "0%"
+}, '-= 1');
