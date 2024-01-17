@@ -12,6 +12,29 @@ gsap.to(".menu-container h2", {
     duration: 1.5,
     delay: 0.3
 });
+
+const menu = document.querySelector('.menu-container h2');
+
+menu.addEventListener("mouseover", () => {
+    const tlMenu = gsap.timeline();
+
+    tlMenu.to(menu, {
+        y: '-100%',
+        duration: 0.3,
+        opacity: 0,
+    });
+    tlMenu.to(menu, {
+        y: 0,
+        opacity: 0,
+        duration: 1
+    }, '-=0.5');
+    tlMenu.to(menu, {
+        opacity: 1,
+        duration: 0.5
+    }, '-=0.5');
+});
+
+
 gsap.to(".logo-menu-container img", {
     opacity: 1,
     duration: 1.5,
@@ -119,7 +142,7 @@ gsap.to(".par-container1-learnmore p", {
     },
     opacity: 1,
     y: '-50%'
-})
+});
 /*
 const tl3 = gsap.timeline({
     scrollTrigger: {
