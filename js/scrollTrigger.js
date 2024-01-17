@@ -13,7 +13,7 @@ gsap.to(".menu-container h2", {
     delay: 0.3
 });
 
-const menu = document.querySelector('.menu-container h2');
+const menu = document.querySelector('.menu-container');
 
 menu.addEventListener("mouseover", () => {
     const tlMenu = gsap.timeline();
@@ -143,9 +143,21 @@ gsap.to(".par-container1-learnmore p", {
     opacity: 1,
     y: '-50%'
 });
-/*
+
 const tl3 = gsap.timeline({
     scrollTrigger: {
-        trigger: ""
+        trigger: ".content-container2",
+        start: "-=100 bottom",
+        end: "bottom bottom"
     }
-}); */
+});
+
+tl3.to(".content-container2-large-img", {
+    y: '-20vh',
+    duration: 0.5
+});
+
+tl3.to(".content-container2-small-img", {
+    y: '-20vh',
+    duration: 0.5
+});
