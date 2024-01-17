@@ -161,3 +161,29 @@ tl3.to(".content-container2-small-img", {
     y: '-20vh',
     duration: 0.5
 });
+
+const tl4 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".content-container2-btnview",
+        start: "top 700",
+        end: "bottom 700",
+    }
+});
+
+tl4.to(".btnview-par1", {
+    stagger: 1,
+    backgroundPositionX: "0%",
+    duration: 1
+});
+
+tl4.to(".btnview-par2", {
+    stagger: 1,
+    backgroundPositionX: "0%",
+    duration: 1
+}, "-=0.8");
+
+tl4.to(".content-container2-btnview button", {
+    y: "-100%",
+    duration: 1,
+    opacity: 1
+});
