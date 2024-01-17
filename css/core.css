@@ -360,6 +360,7 @@ header {
   height: auto;
   background-color: #fff;
   color: #000;
+  scale: 0.7;
 }
 
 .content-our-service{
@@ -373,6 +374,16 @@ header {
   margin: 120px 0px 120px 0px;
   font-size: 20px;
   font-weight: bolder;
+  background: linear-gradient(
+    to right,
+    #000 50%,
+    #777777 50%
+  );
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 .our-service-list {
   display: flex;

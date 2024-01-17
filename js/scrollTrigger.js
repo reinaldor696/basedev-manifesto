@@ -187,3 +187,25 @@ tl4.to(".content-container2-btnview button", {
     duration: 1,
     opacity: 1
 });
+
+gsap.to(".content-container3", {
+    scale: 1,
+    duration: 1, 
+    scrollTrigger: {
+        trigger: ".content-container3",
+        start: "-200 bottom",
+        end: "100 bottom",
+        scrub: true
+    }
+});
+
+gsap.to(".our-service", {
+    backgroundPositionX: "0%",
+    stagger: 1,
+    scrollTrigger: {
+        trigger: ".our-service",
+        start: "-=150 700",
+        end: "-=50 700",
+        scrub: true
+    }
+});
