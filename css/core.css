@@ -66,6 +66,19 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+/* Cursor */
+.cursor {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid #777;
+  background-color: transparent;
+  position: absolute;
+  position: fixed;
+  z-index: 10000;
+}
+/* Cursor End*/
+
 /* Header */
 header {
   display: flex;

@@ -1,6 +1,19 @@
 /*------------------------------
 Init ScrollTrigger // Inicio de ScrollTrigger
 ------------------------------*/
+/* Cursor */
+document.body.addEventListener("mousemove", e => {
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+
+    gsap.to(".cursor", {
+        x: mouseX,
+        y: mouseY  
+    });
+});
+/* Cursor End*/
+
+/* Header */
 gsap.to(".logo-container img", {
     opacity: 1,
     duration: 1.5,
@@ -40,7 +53,9 @@ gsap.to(".logo-menu-container img", {
     duration: 1.5,
     delay: 0.3
 });
+/* Header End*/
 
+/* Content Container1 */
 gsap.to(".title-container h2", {
     opacity: 1,
     y: "-15%",
@@ -143,7 +158,9 @@ gsap.to(".par-container1-learnmore p", {
     opacity: 1,
     y: '-50%'
 });
+/* Content Container1 End */
 
+/* Content Container2 */
 const tl3 = gsap.timeline({
     scrollTrigger: {
         trigger: ".content-container2",
@@ -187,7 +204,9 @@ tl4.to(".content-container2-btnview button", {
     duration: 1,
     opacity: 1
 });
+/* Content Container2 End */
 
+/* Content Container3 */
 gsap.to(".content-container3", {
     scale: 1,
     duration: 1, 
@@ -209,3 +228,6 @@ gsap.to(".our-service", {
         scrub: true
     }
 });
+
+
+/* Content Container3 End */
