@@ -230,4 +230,111 @@ gsap.to(".our-service", {
 });
 
 
+const tl5 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".short-tip",
+        start: "top 600",
+        end: "bottom 600",
+        scrub: true
+    }
+});
+tl5.to(".shortip-2023", {
+    stagger: 0.3,
+    backgroundPositionX: "0%"
+});
+tl5.to(".shortip-portfolio", {
+    stagger: 0.3,
+    backgroundPositionX: "0%"
+}, '-= 1');
+tl5.to(".short-tip-content1 p", {
+    stagger: 0.3,
+    backgroundPositionX: "0%"
+}, '-= 1');
 /* Content Container3 End */
+
+/* Content Container4 */
+const tl6 = gsap.timeline();
+
+tl6.fromTo(".container4-title", {
+    x: "-100vw",
+    y: 0,
+    duration: 10
+}, {
+    x: "100vw",
+    y: 0,
+    duration: 10,
+    ease: "linear",
+});
+
+tl6.repeat(-1);
+
+
+const tl7 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".list-1",
+        start: "top 500",
+        end: "top 195",
+        toggleActions: "play reverse restart reverse"
+    },
+    duration: 0
+});
+
+tl7.to(".list-1", {
+    opacity: 1
+});
+tl7.to(".par-display-1", {
+    display: "block"
+}, "-= 1");
+
+const tl8 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".list-2",
+        start: "top 500",
+        end: "top 195",
+        toggleActions: "play reverse restart reverse"
+    },
+    duration: 0
+});
+
+tl8.to(".list-2", {
+    opacity: 1,
+
+});
+tl8.to(".par-display-2", {
+    display: "block"
+}, "-= 1");
+
+const tl9 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".list-3",
+        start: "top 500",
+        end: "top 195",
+        toggleActions: "play reverse restart reverse"
+    },
+    duration: 0
+});
+
+tl9.to(".list-3", {
+    opacity: 1
+});
+tl9.to(".par-display-3", {
+    display: "block"
+}, "-= 1");
+
+const tl10 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".list-4",
+        start: "top 500",
+        end: "top 195",
+        toggleActions: "play none none reverse"
+    },
+    duration: 0
+});
+
+tl10.to(".list-4", {
+    opacity: 1
+});
+tl10.to(".par-display-4", {
+    display: "block"
+}, "-= 1");
+/* Content Container4 End */

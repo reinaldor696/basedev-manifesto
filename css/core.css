@@ -419,6 +419,30 @@ header {
   margin-top: 250px;
   padding-bottom: 250px;
 }
+.shortip-2023 {
+  background: linear-gradient(
+    to right,
+    #000 50%,
+    #777777 50%
+  );
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.shortip-portfolio {
+  background: linear-gradient(
+    to right,
+    #000 50%,
+    #777777 50%
+  );
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
 .short-quick-tip {
   display: flex;
 }
@@ -434,6 +458,16 @@ header {
 .short-tip-content1 p {
   margin-top: -20px;
   font-weight: bolder;
+  background: linear-gradient(
+    to right,
+    #000 50%,
+    #777777 50%
+  );
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 
 }
 .short-tip-content2 {
@@ -463,11 +497,16 @@ header {
   margin-left: 5px;
 }
 
+.border-bottom {
+  border-bottom: 1px solid #7777;
+}
 .content1 {
   display: flex;
   justify-content: space-between;
   padding: 50px 0px 50px 0px;
-  border-bottom: 1px solid #7777;
+}
+.list-1, .list-2, .list-3, .list-4 {
+  opacity: 0.3;
 }
 .content-p1 {
   margin-left: 100px;
@@ -476,8 +515,11 @@ header {
 .par-color {
   color: #777777;
 }
+.par-display-1, .par-display-2, .par-display-3, .par-display-4 {
+  display: none;
+}
 .content-p2 {
-  margin-right: 350px;
+  width: 900px;
 }
 .content1-title {
   display: flex;
@@ -489,12 +531,6 @@ header {
   font-weight: bolder;
 }
 
-#margin-fix {
-  margin-right: 305px;
-}
-#line-fix {
-  border: none;
-}
 /* Content Container4 End */
 
 /* Footer */
