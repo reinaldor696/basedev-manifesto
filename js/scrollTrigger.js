@@ -258,12 +258,15 @@ const tl6 = gsap.timeline();
 tl6.fromTo(".container4-title", {
     x: "-100vw",
     y: 0,
-    duration: 10
+    duration: 10,
+    ease: "linear",
+    yoyo: true
 }, {
-    x: "100vw",
+    x: 0,
     y: 0,
     duration: 10,
     ease: "linear",
+    yoyo: true
 });
 
 tl6.repeat(-1);
@@ -337,4 +340,16 @@ tl10.to(".list-4", {
 tl10.to(".par-display-4", {
     display: "block"
 }, "-= 1");
+
+gsap.to(".footer-title", {
+    y: "100px",
+    opacity: 1,
+    scrollTrigger : {
+        trigger: ".footer-title",
+        start: "top 600",
+        end: "500 600",
+        scrub: true,
+        markers: true
+    }
+});
 /* Content Container4 End */
