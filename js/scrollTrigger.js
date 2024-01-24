@@ -229,6 +229,18 @@ gsap.to(".our-service", {
     }
 });
 
+const tl11 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".box",
+        start: "center center",
+        end: "1200 center",
+        scrub: true,
+        pin: true
+    }
+});
+
+tl11.set(".box-content", { y: "50%"});
+tl11.to(".box-content", {y: "0%"});
 
 const tl5 = gsap.timeline({
     scrollTrigger: {
@@ -349,7 +361,6 @@ gsap.to(".footer-title", {
         start: "top 600",
         end: "500 600",
         scrub: true,
-        markers: true
     }
 });
 /* Content Container4 End */

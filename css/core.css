@@ -384,7 +384,7 @@ header {
 .our-service  {
   display: flex;
   justify-content: center;
-  margin: 120px 0px 120px 0px;
+  margin-top: 120px;
   font-size: 20px;
   font-weight: bolder;
   background: linear-gradient(
@@ -397,6 +397,19 @@ header {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+.box {
+  width: 76vw;
+  position: absolute;
+  z-index: 4;
+  height: 1080px;
+  background-image: linear-gradient(180deg, #fff 14%, transparent 26%, transparent 51%, #fff 62%);
+  overflow: hidden;
+}
+.box-content {
+  position: relative;
+  z-index: 2;
 }
 .our-service-list {
   display: flex;
@@ -418,6 +431,8 @@ header {
   justify-content: space-around;
   margin-top: 250px;
   padding-bottom: 250px;
+  position: relative;
+  z-index: 6;
 }
 .shortip-2023 {
   background: linear-gradient(
