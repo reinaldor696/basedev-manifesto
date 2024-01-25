@@ -84,7 +84,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #000;
-  color: #777;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,6 +98,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  font-size: 50px;
+  font-weight: lighter;
 }
 .loading {
   width: 100vw;
@@ -106,8 +108,14 @@ body {
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 10vh;
+  font-size: 20px;
 }
 /* Pre Loader End */
+
+.content{
+  display: none;
+}
+
 /* Header */
 header {
   display: flex;
@@ -446,6 +454,7 @@ header {
   font-size: 100px;
   margin-bottom: -40px;
 }
+
 .list-separation-right {
   margin-right: 8px;
   font-weight: lighter;

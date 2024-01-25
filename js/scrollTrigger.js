@@ -15,9 +15,8 @@ document.body.addEventListener("mousemove", e => {
 
 /* Pre Loader */
 const tlPreLoader = gsap.timeline();
-const counter = document.querySelector(".counter");
 
-tlPreLoader.fromTo(counter,
+tlPreLoader.fromTo(".counter",
     { 
         innerHTML: 0 
     }, {
@@ -27,21 +26,27 @@ tlPreLoader.fromTo(counter,
         counter.innerHTML = Math.round(counter.innerHTML);
         }
 });
-tlPreLoader.to(".number h1", {y: "-100%", opacity:0});
-tlPreLoader.to(".loading p", {y: "-100%", opacity:0});
+
+tlPreLoader.to(".loading p", {opacity: 0})
+;
+tlPreLoader.to(".number h1", {y: "-100%", opacity: 0});
+
 tlPreLoader.to(".pre-loader", {opacity: 0, duration: 0.5});
+
+tlPreLoader.to(".content", {display: "block"})
 /* Pre Loader End*/
+
 /* Header */
 gsap.to(".logo-container img", {
     opacity: 1,
     duration: 1.5,
-    delay: 0.3
+    delay: 2
 });
 
 gsap.to(".menu-container h2", {
     opacity: 1,
     duration: 1.5,
-    delay: 0.3
+    delay: 2
 });
 
 const menu = document.querySelector('.menu-container');
@@ -69,7 +74,7 @@ menu.addEventListener("mouseover", () => {
 gsap.to(".logo-menu-container img", {
     opacity: 1,
     duration: 1.5,
-    delay: 0.3
+    delay: 2
 });
 /* Header End*/
 
@@ -78,7 +83,7 @@ gsap.to(".title-container h2", {
     opacity: 1,
     y: "-15%",
     duration: 1.5,
-    delay: 0.3
+    delay: 2
 });
 
 
@@ -86,7 +91,7 @@ gsap.to(".title-container h1", {
     opacity: 1,
     y: "-15%",
     duration: 1.5,
-    delay: 0.5
+    delay: 2.2
 });
 
 
@@ -94,25 +99,25 @@ gsap.to(".par1", {
     y: "-60%",
     duration: 1,
     opacity: 1,
-    delay: 0.3
+    delay: 2
 });
 gsap.to(".par2", {
     y: "-60%",
     duration: 1,
     opacity: 1,
-    delay: 0.4
+    delay: 2.1
 });
 gsap.to(".par3", {
     y: "-60%",
     duration: 1,
     opacity: 1,
-    delay: 0.5
+    delay: 2.2
 });
 
 gsap.to(".img-container img", {
     duration: 1,
     opacity: 1,
-    delay:0.6
+    delay: 2.4
 });
 
 const tl1 = gsap.timeline({
@@ -251,7 +256,7 @@ const tl11 = gsap.timeline({
     scrollTrigger: {
         trigger: ".box",
         start: "center center",
-        end: "1200 center",
+        end: "1100 center",
         scrub: true,
         pin: true
     }
