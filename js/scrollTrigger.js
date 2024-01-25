@@ -13,6 +13,24 @@ document.body.addEventListener("mousemove", e => {
 });
 /* Cursor End*/
 
+/* Pre Loader */
+const tlPreLoader = gsap.timeline();
+const counter = document.querySelector(".counter");
+
+tlPreLoader.fromTo(counter,
+    { 
+        innerHTML: 0 
+    }, {
+        innerHTML: 100,
+        duration: 1,
+        onUpdate: () => {
+        counter.innerHTML = Math.round(counter.innerHTML);
+        }
+});
+tlPreLoader.to(".number h1", {y: "-100%", opacity:0});
+tlPreLoader.to(".loading p", {y: "-100%", opacity:0});
+tlPreLoader.to(".pre-loader", {opacity: 0, duration: 0.5});
+/* Pre Loader End*/
 /* Header */
 gsap.to(".logo-container img", {
     opacity: 1,

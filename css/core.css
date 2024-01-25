@@ -79,6 +79,35 @@ body {
 }
 /* Cursor End*/
 
+/* Pre Loader */
+.pre-loader {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  color: #777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  z-index: 8;
+}
+.number {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.loading {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 10vh;
+}
+/* Pre Loader End */
 /* Header */
 header {
   display: flex;
@@ -403,7 +432,7 @@ header {
   width: 76vw;
   position: absolute;
   z-index: 4;
-  height: 1080px;
+  height: 100vh;
   background-image: linear-gradient(180deg, #fff 14%, transparent 26%, transparent 51%, #fff 62%);
   overflow: hidden;
 }
