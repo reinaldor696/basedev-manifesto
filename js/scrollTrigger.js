@@ -312,69 +312,72 @@ const tl7 = gsap.timeline({
     scrollTrigger: {
         trigger: ".list-1",
         start: "top 500",
-        end: "top 195",
+        end: "-7 200",
         toggleActions: "play reverse restart reverse"
-    },
-    duration: 0
+    }
 });
 
 tl7.to(".list-1", {
-    opacity: 1
+    opacity: 1,
+    duration: 0
 });
 tl7.to(".par-display-1", {
-    display: "block"
-}, "-= 1");
+    display: "block",
+    duration: 0
+});
 
 const tl8 = gsap.timeline({
     scrollTrigger: {
         trigger: ".list-2",
         start: "top 500",
-        end: "top 195",
+        end: "-93 200",
         toggleActions: "play reverse restart reverse"
-    },
-    duration: 0
-});
+    }
+}, "-=1");
 
 tl8.to(".list-2", {
     opacity: 1,
-
+    duration: 0
 });
 tl8.to(".par-display-2", {
-    display: "block"
-}, "-= 1");
+    display: "block",
+    duration: 0
+});
 
 const tl9 = gsap.timeline({
     scrollTrigger: {
         trigger: ".list-3",
         start: "top 500",
-        end: "top 195",
+        end: "-93 200",
         toggleActions: "play reverse restart reverse"
-    },
-    duration: 0
+    }
 });
 
 tl9.to(".list-3", {
-    opacity: 1
+    opacity: 1,
+    duration: 0
 });
 tl9.to(".par-display-3", {
-    display: "block"
+    display: "block",
+    duration: 0
 }, "-= 1");
 
 const tl10 = gsap.timeline({
     scrollTrigger: {
         trigger: ".list-4",
         start: "top 500",
-        end: "top 195",
+        end: "top 200",
         toggleActions: "play none none reverse"
-    },
-    duration: 0
+    }
 });
 
 tl10.to(".list-4", {
-    opacity: 1
+    opacity: 1,
+    duration: 0
 });
 tl10.to(".par-display-4", {
-    display: "block"
+    display: "block",
+    duration: 0
 }, "-= 1");
 
 gsap.to(".footer-title", {
