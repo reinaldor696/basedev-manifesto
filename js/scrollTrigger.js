@@ -15,8 +15,9 @@ document.body.addEventListener("mousemove", e => {
 
 /* Pre Loader */
 const tlPreLoader = gsap.timeline();
+const counter = document.querySelector(".counter");
 
-tlPreLoader.fromTo(".counter",
+tlPreLoader.fromTo(counter,
     { 
         innerHTML: 0 
     }, {
