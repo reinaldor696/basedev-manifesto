@@ -432,7 +432,7 @@ header {
   width: 76vw;
   position: absolute;
   z-index: 4;
-  height: 1150px;
+  height: 1110px;
   background-image: linear-gradient(180deg, #fff 14%, transparent 40%, transparent 45%, #fff 62%);
   overflow: hidden;
 }
