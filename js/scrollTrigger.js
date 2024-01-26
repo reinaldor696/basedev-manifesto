@@ -312,9 +312,8 @@ const tl7 = gsap.timeline({
     scrollTrigger: {
         trigger: ".list-1",
         start: "top 500",
-        end: "-94 200",
-        toggleActions: "play reverse restart reverse",
-        markers: true
+        end: "bottom 500",
+        toggleActions: "play reverse restart reverse"
     }
 });
 
@@ -331,9 +330,8 @@ const tl8 = gsap.timeline({
     scrollTrigger: {
         trigger: ".list-2",
         start: "top 500",
-        end: "-93 200",
-        toggleActions: "play reverse restart reverse",
-        markers: true
+        end: "bottom 500",
+        toggleActions: "play reverse restart reverse"
     }
 }, "-=1");
 
@@ -349,10 +347,9 @@ tl8.to(".par-display-2", {
 const tl9 = gsap.timeline({
     scrollTrigger: {
         trigger: ".list-3",
-        start: "top 593",
-        end: "-93 200",
-        toggleActions: "play reverse restart reverse",
-        markers: true
+        start: "top 500",
+        end: "bottom 500",
+        toggleActions: "play reverse restart reverse"
     }
 });
 
@@ -369,9 +366,8 @@ const tl10 = gsap.timeline({
     scrollTrigger: {
         trigger: ".list-4",
         start: "top 500",
-        end: "top 200",
-        toggleActions: "play none none reverse",
-        markers: true
+        end: "bottom 500",
+        toggleActions: "play none none reverse"
     }
 });
 
