@@ -412,6 +412,11 @@ header {
   color: #000;
   scale: 0.7;
 }
+.content-over {
+  position: relative;
+  background-image: linear-gradient(180deg, #fff 20%, transparent 30%, transparent 45%, #fff 55%);
+  z-index: 3;
+}
 
 .content-our-service{
   display: flex;
@@ -435,18 +440,16 @@ header {
   background-clip: text;
   -webkit-background-clip: text;
 }
-
-.box {
-  width: 76vw;
-  position: absolute;
-  z-index: 4;
-  height: 1110px;
-  background-image: linear-gradient(180deg, #fff 14%, transparent 40%, transparent 45%, #fff 62%);
-  overflow: hidden;
+.our-service-scroll {
+  width: 100%;
+  height: 500px;
 }
+
 .box-content {
-  position: relative;
+  position: absolute;
   z-index: 2;
+  margin-top: -652px;
+  margin-left: 220px;
 }
 .our-service-list {
   display: flex;

@@ -255,16 +255,16 @@ gsap.to(".our-service", {
 
 const tl11 = gsap.timeline({
     scrollTrigger: {
-        trigger: ".box",
+        trigger: ".our-service-scroll",
         start: "center center",
-        end: "1100 center",
+        end: "bottom center",
         scrub: true,
         pin: true
     }
 });
 
-tl11.set(".box-content", { y: "50%"});
-tl11.to(".box-content", {y: "0%"});
+tl11.set(".box-content", { y: "0%"});
+tl11.to(".box-content", {y: "-100%"});
 
 const tl5 = gsap.timeline({
     scrollTrigger: {
@@ -312,7 +312,7 @@ const tl7 = gsap.timeline({
     scrollTrigger: {
         trigger: ".list-1",
         start: "top 500",
-        end: "-7 200",
+        end: "0 200",
         toggleActions: "play reverse restart reverse"
     }
 });
