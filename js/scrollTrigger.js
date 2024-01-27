@@ -80,7 +80,7 @@ gsap.to(".logo-menu-container img", {
 /* Header End*/
 
 /* Content Container1 */
-gsap.to(".title-container h2", {
+gsap.to(".title-container h1", {
     opacity: 1,
     y: "-15%",
     duration: 1.5,
@@ -88,7 +88,7 @@ gsap.to(".title-container h2", {
 });
 
 
-gsap.to(".title-container h1", {
+gsap.to(".title-container h2", {
     opacity: 1,
     y: "-15%",
     duration: 1.5,
