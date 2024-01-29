@@ -234,6 +234,43 @@ header {
 }
 /* Content Container4 End*/
 
+/* Footer */
+.footer-title {
+}
+.footer-title h1 {
+    font-size: 36px;
+}
+.footer-title1 {
+    margin-bottom: -8px;
+}
+.footer-title2 {
+    margin-top: -8px;
+}
+.footer-title p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.footer-bottom p {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+}
+.arrow-icon {
+    margin-left: 35px;
+    margin-top: 10px;
+}
+.arrow-icon p {
+    display: none;
+}
+.share-icon {
+    display: none;
+}
+/* Footer End*/
 }
 
 /*Media queries para trabajar Tablets como las Surfaces*/
