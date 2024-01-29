@@ -223,12 +223,14 @@ header {
     flex-direction: column;
     margin: 0;
 }
+.content-p1 span {
+    margin-bottom: 10px;
+}
 .content1-title {
     font-size: 16px;
 }
-
-.par-display-1 {
-    
+.par-color2 {
+    margin-bottom: 10px;
 }
 /* Content Container4 End*/
 
