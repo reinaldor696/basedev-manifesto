@@ -147,11 +147,9 @@ header {
 
 /* Content Container3 */
 .content-container3 {
-
+    padding: 25px
 }
-.content-over {
 
-}
 .content-our-service {
     display: flex;
     align-items: flex-start;
@@ -159,6 +157,9 @@ header {
 .our-service {
     margin-top: 60px;
     font-size: 16px;
+}
+.our-service-scroll {
+    /*ajuste pendiente con gsap*/
 }
 
 .our-service-list {
@@ -184,8 +185,19 @@ header {
 .short-tip-content1 p {
     margin-top: 0;
 }
-.short-tip-content2 {
 
+.our-service-list {
+    font-size: 28px;
+    display: flex;
+    margin: 0;
+    justify-content: flex-start;
+}
+
+.list-separation-right {
+    margin-right: 4px;
+}
+.list-separation-left {
+    margin-left: 4px;
 }
 /* Content Container3 End*/
 
