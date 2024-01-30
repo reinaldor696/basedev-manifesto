@@ -154,6 +154,40 @@ gsap.to(".img-container-par p", {
     }
 });
 
+mm.add("(max-width: 479px)", () => {
+    const tl1 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".img-container",
+            start: "center center",
+            end: "bottom center",
+            scrub: true,
+            pin: true
+        }
+        });
+        tl1.to("#img", {   
+            position: 'center',
+            width: '100%', 
+            duration: 1,
+        });
+        
+        tl1.to(".img-container-par", {
+            y: '-600px', 
+            duration: 1
+        }, '-=0.9')
+        
+        gsap.to(".img-container-par p", {
+            backgroundPositionX: "0%",
+            stagger: 1,
+            scrollTrigger: {
+                trigger: ".img-container-par",
+                start: "-500 70%",
+                end: "250 70%",
+                scrub: true,
+                markers: true
+            }
+        });
+});
+
 const tl2 = gsap.timeline({
     scrollTrigger: {
         trigger: ".par-container1",
