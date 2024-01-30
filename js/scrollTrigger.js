@@ -275,8 +275,8 @@ mm.add("(max-width: 479px)", () => {
     gsap.to(".content-container2-large-img", {
         scrollTrigger: {
             trigger: ".content-container2-large-img",
-            start: "top 900",
-            end: "bottom 900"
+            start: "top 750",
+            end: "bottom 750"
         },
         y: '-10vh',
         duration: 0.5
@@ -285,8 +285,8 @@ mm.add("(max-width: 479px)", () => {
     gsap.to(".small-img1", {
         scrollTrigger: {
             trigger: ".small-img1",
-            start: "top 900",
-            end: "bottom 900"
+            start: "top 750",
+            end: "bottom 750"
         },
         y: '-10vh',
         duration: 0.5
@@ -295,8 +295,8 @@ mm.add("(max-width: 479px)", () => {
     gsap.to(".small-img2", {
         scrollTrigger: {
             trigger: ".small-img2",
-            start: "top 900",
-            end: "bottom 900"
+            start: "top 750",
+            end: "bottom 750"
         },
         y: '-10vh',
         duration: 0.5
