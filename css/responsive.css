@@ -104,8 +104,8 @@ header {
 }
 
 .content-container2-large-img img {
-    height: 600px;
-    width: 430px;
+    height: 63vh;
+    width: 90vw;
 }
 .content-container2-large-img {
     margin-bottom: 25px;
@@ -122,12 +122,12 @@ header {
 }
 
 .small-img1 img{
-    height: 600px;
-    width: 430px;
+    height: 63vh;
+    width: 90vw;
 }
 .small-img2 img{
-    height: 600px;
-    width: 430px;
+    height: 63vh;
+    width: 90vw;
 }
 .small-img1 p{
     display: flex;
@@ -159,7 +159,8 @@ header {
     font-size: 16px;
 }
 .our-service-scroll {
-    /*ajuste pendiente con gsap*/
+    display: none;
+    /*pendiente por reparar*/
 }
 
 .our-service-list {
@@ -235,8 +236,6 @@ header {
 /* Content Container4 End*/
 
 /* Footer */
-.footer-title {
-}
 .footer-title h1 {
     font-size: 36px;
 }
