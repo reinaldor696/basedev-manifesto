@@ -122,7 +122,7 @@ gsap.to(".img-container img", {
     opacity: 1,
     delay: 2.4
 });
-
+mm.add("(min-width: 480px)", () => {
 const tl1 = gsap.timeline({
 scrollTrigger: {
     trigger: ".img-container",
@@ -153,7 +153,7 @@ gsap.to(".img-container-par p", {
         scrub: true,
     }
 });
-
+});
 mm.add("(max-width: 479px)", () => {
     const tl1 = gsap.timeline({
         scrollTrigger: {
@@ -175,16 +175,10 @@ mm.add("(max-width: 479px)", () => {
             duration: 1
         }, '-=0.9')
         
-        gsap.to(".img-container-par p", {
+        tl1.to(".img-container-par p", {
             backgroundPositionX: "0%",
-            stagger: 1,
-            scrollTrigger: {
-                trigger: ".img-container-par",
-                start: "-500 70%",
-                end: "250 70%",
-                scrub: true
-            }
-        });
+            stagger: 1
+        }, "-= 1");
 });
 
 const tl2 = gsap.timeline({
