@@ -175,14 +175,10 @@ header {
     /*pendiente por reparar*/
 }
 
-.our-service-list {
-    font-size: 23px
-}
-
 .short-tip {
     display: flex;
     flex-direction: column;
-    margin-top: 63vh;
+    margin-top: 55vh;
     margin-bottom: -33vh;
 }
 
@@ -202,7 +198,7 @@ header {
 }
 
 .our-service-list {
-    font-size: 28px;
+    font-size: 23px;
     display: flex;
     margin: 0;
     justify-content: flex-start;
