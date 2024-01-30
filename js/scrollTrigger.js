@@ -553,7 +553,9 @@ mm.add("(max-width: 479px)", () => {
         duration: 0
     }, "-= 1");
 });
+/* Content Container4 End */
 
+/* Footer */
 gsap.to(".footer-title", {
     y: "100px",
     opacity: 1,
@@ -564,4 +566,4 @@ gsap.to(".footer-title", {
         scrub: true,
     }
 });
-/* Content Container4 End */
+/* Footer End */

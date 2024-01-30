@@ -97,6 +97,9 @@ header {
     font-weight: bolder;
     margin-bottom: 4px;
 }
+.par-container1 span {
+    font-size: 15px;
+}
 /* Content Container1 End*/
 
 /* Content Container2 */
@@ -198,7 +201,7 @@ header {
     margin-top: 0;
 }
 .par-our-project {
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 .our-service-list {
