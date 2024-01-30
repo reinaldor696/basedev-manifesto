@@ -99,6 +99,8 @@ header {
 }
 .par-container1 span {
     font-size: 15px;
+    display: flex;
+    flex-direction: column;
 }
 /* Content Container1 End*/
 
