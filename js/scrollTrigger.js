@@ -270,8 +270,6 @@ mm.add("(min-width: 480px)", () => {
     });
 });
 mm.add("(max-width: 479px)", () => {
-    
-
     gsap.to(".content-container2-large-img", {
         scrollTrigger: {
             trigger: ".content-container2-large-img",
@@ -408,78 +406,153 @@ tl6.fromTo(".container4-title", {
 
 tl6.repeat(-1);
 
+mm.add("(min-width: 480px)", () => {
+    const tl7 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".list-1",
+            start: "top 500",
+            end: "bottom 500",
+            toggleActions: "play reverse restart reverse"
+        }
+    });
 
-const tl7 = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".list-1",
-        start: "top 500",
-        end: "bottom 500",
-        toggleActions: "play reverse restart reverse"
-    }
+    tl7.to(".list-1", {
+        opacity: 1,
+        duration: 0
+    });
+    tl7.to(".par-display-1", {
+        display: "block",
+        duration: 0
+    });
+
+    const tl8 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".list-2",
+            start: "top 500",
+            end: "bottom 500",
+            toggleActions: "play reverse restart reverse"
+        }
+    }, "-=1");
+
+    tl8.to(".list-2", {
+        opacity: 1,
+        duration: 0
+    });
+    tl8.to(".par-display-2", {
+        display: "block",
+        duration: 0
+    });
+
+    const tl9 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".list-3",
+            start: "top 500",
+            end: "bottom 500",
+            toggleActions: "play reverse restart reverse"
+        }
+    });
+
+    tl9.to(".list-3", {
+        opacity: 1,
+        duration: 0
+    });
+    tl9.to(".par-display-3", {
+        display: "block",
+        duration: 0
+    }, "-= 1");
+
+    const tl10 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".list-4",
+            start: "top 500",
+            end: "bottom 500",
+            toggleActions: "play none none reverse"
+        }
+    });
+
+    tl10.to(".list-4", {
+        opacity: 1,
+        duration: 0
+    });
+    tl10.to(".par-display-4", {
+        display: "block",
+        duration: 0
+    }, "-= 1");
 });
 
-tl7.to(".list-1", {
-    opacity: 1,
-    duration: 0
-});
-tl7.to(".par-display-1", {
-    display: "block",
-    duration: 0
-});
+mm.add("(max-width: 479px)", () => {
+    const tl7 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".list-1",
+            start: "top 400",
+            end: "bottom 400",
+            toggleActions: "play reverse restart reverse"
+        }
+    });
 
-const tl8 = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".list-2",
-        start: "top 500",
-        end: "bottom 500",
-        toggleActions: "play reverse restart reverse"
-    }
-}, "-=1");
+    tl7.to(".list-1", {
+        opacity: 1,
+        duration: 0
+    });
+    tl7.to(".par-display-1", {
+        display: "block",
+        duration: 0
+    });
 
-tl8.to(".list-2", {
-    opacity: 1,
-    duration: 0
-});
-tl8.to(".par-display-2", {
-    display: "block",
-    duration: 0
-});
+    const tl8 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".list-2",
+            start: "top 400",
+            end: "bottom 400",
+            toggleActions: "play reverse restart reverse"
+        }
+    }, "-=1");
 
-const tl9 = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".list-3",
-        start: "top 500",
-        end: "bottom 500",
-        toggleActions: "play reverse restart reverse"
-    }
-});
+    tl8.to(".list-2", {
+        opacity: 1,
+        duration: 0
+    });
+    tl8.to(".par-display-2", {
+        display: "block",
+        duration: 0
+    });
 
-tl9.to(".list-3", {
-    opacity: 1,
-    duration: 0
-});
-tl9.to(".par-display-3", {
-    display: "block",
-    duration: 0
-}, "-= 1");
+    const tl9 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".list-3",
+            start: "top 400",
+            end: "bottom 400",
+            toggleActions: "play reverse restart reverse"
+        }
+    });
 
-const tl10 = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".list-4",
-        start: "top 500",
-        end: "bottom 500",
-        toggleActions: "play none none reverse"
-    }
-});
+    tl9.to(".list-3", {
+        opacity: 1,
+        duration: 0
+    });
+    tl9.to(".par-display-3", {
+        display: "block",
+        duration: 0
+    }, "-= 1");
 
-tl10.to(".list-4", {
-    opacity: 1,
-    duration: 0
+    const tl10 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".list-4",
+            start: "top 400",
+            end: "bottom 400",
+            toggleActions: "play none none reverse"
+        }
+    });
+
+    tl10.to(".list-4", {
+        opacity: 1,
+        duration: 0
+    });
+    tl10.to(".par-display-4", {
+        display: "block",
+        duration: 0
+    }, "-= 1");
 });
-tl10.to(".par-display-4", {
-    display: "block",
-    duration: 0
-}, "-= 1");
 
 gsap.to(".footer-title", {
     y: "100px",
