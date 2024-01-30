@@ -196,6 +196,9 @@ header {
 .short-tip-content1 p {
     margin-top: 0;
 }
+.par-our-project {
+    margin-left: 15px;
+}
 
 .our-service-list {
     font-size: 23px;
@@ -213,7 +216,7 @@ header {
 
 .box-content {
     z-index: 3;
-    margin-top: 13vh;
+    margin-top: 15vh;
 }
 /* Content Container3 End*/
 
