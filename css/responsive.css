@@ -157,7 +157,9 @@ header {
 
 /* Content Container3 */
 .content-container3 {
-    padding: 25px
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
 }
 
 .content-our-service {
@@ -180,6 +182,8 @@ header {
 .short-tip {
     display: flex;
     flex-direction: column;
+    margin-top: 63vh;
+    margin-bottom: -33vh;
 }
 
 
@@ -209,6 +213,11 @@ header {
 }
 .list-separation-left {
     margin-left: 4px;
+}
+
+.box-content {
+    z-index: 3;
+    margin-top: 13vh;
 }
 /* Content Container3 End*/
 

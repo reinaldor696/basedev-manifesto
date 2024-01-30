@@ -1,6 +1,8 @@
 /*------------------------------
 Init ScrollTrigger // Inicio de ScrollTrigger
 ------------------------------*/
+/* Match Media*/
+let mm = gsap.matchMedia();
 /* Cursor */
 document.body.addEventListener("mousemove", e => {
     const mouseX = e.clientX;
@@ -253,19 +255,20 @@ gsap.to(".our-service", {
     }
 });
 
-const tl11 = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".our-service-scroll",
-        start: "center center",
-        end: "bottom center",
-        scrub: true,
-        pin: true
-    }
+mm.add("(min-width: 480px)", () => {
+    const tl11 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".our-service-scroll",
+            start: "center center",
+            end: "bottom center",
+            scrub: true,
+            pin: true
+        }
+    });
+
+    tl11.set(".box-content", { y: "100%"});
+    tl11.to(".box-content", {y: "-40%"});
 });
-
-tl11.set(".box-content", { y: "100%"});
-tl11.to(".box-content", {y: "-40%"});
-
 const tl5 = gsap.timeline({
     scrollTrigger: {
         trigger: ".short-tip",
