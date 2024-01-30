@@ -69,7 +69,7 @@ header {
     width: 63vw;
 }
 .img-container-par {
-    font-size: 22px;
+    font-size: 18px;
 }
 .img-container-par p{
     margin: -2px;
@@ -119,6 +119,9 @@ header {
 .content-container2-small-img {
     display: flex;
     flex-direction: column;
+}
+.content-container2-small-img div {
+    margin: 25px 25px 25px 25px;
 }
 
 .small-img1 img{
