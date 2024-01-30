@@ -250,7 +250,11 @@ header {
     margin-bottom: 10px;
 }
 .par-color {
-    font-size: 13px;
+    font-size: 12px;
+}
+#par-separation {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 /* Content Container4 End*/
 
