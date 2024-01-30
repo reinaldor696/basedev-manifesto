@@ -122,37 +122,38 @@ gsap.to(".img-container img", {
     opacity: 1,
     delay: 2.4
 });
+
 mm.add("(min-width: 480px)", () => {
-const tl1 = gsap.timeline({
-scrollTrigger: {
-    trigger: ".img-container",
-    start: "200 top",
-    end: "bottom top",
-    scrub: true,
-    pin: true,
-}
-});
-tl1.to("#img", {   
-    position: 'center',
-    width: '100%', 
-    duration: 1,
-});
-
-tl1.to(".img-container-par", {
-    y: '-600px', 
-    duration: 1
-}, '-=0.9')
-
-gsap.to(".img-container-par p", {
-    backgroundPositionX: "0%",
-    stagger: 1,
+    const tl1 = gsap.timeline({
     scrollTrigger: {
-        trigger: ".img-container-par",
-        start: "-50 90%",
-        end: "800 90%",
+        trigger: ".img-container",
+        start: "200 top",
+        end: "bottom top",
         scrub: true,
+        pin: true,
     }
-});
+    });
+    tl1.to("#img", {   
+        position: 'center',
+        width: '100%', 
+        duration: 1,
+    });
+
+    tl1.to(".img-container-par", {
+        y: '-600px', 
+        duration: 1
+    }, '-=0.9')
+
+    gsap.to(".img-container-par p", {
+        backgroundPositionX: "0%",
+        stagger: 1,
+        scrollTrigger: {
+            trigger: ".img-container-par",
+            start: "-50 90%",
+            end: "800 90%",
+            scrub: true,
+        }
+    });
 });
 mm.add("(max-width: 479px)", () => {
     const tl1 = gsap.timeline({
@@ -181,35 +182,70 @@ mm.add("(max-width: 479px)", () => {
         }, "-= 1");
 });
 
-const tl2 = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".par-container1",
-        start: "-=50 700",
-        end: "bottom 700",
-        scrub: true,
-    }
-});
-tl2.to("#par-2023", {
-    stagger: 0.3,
-    backgroundPositionX: "0%"
-});
-tl2.to("#par-portfolio", {
-    stagger: 0.3,
-    backgroundPositionX: "0%"
-}, '-= 1');
-tl2.to("#par-par", {
-    stagger: 0.3,
-    backgroundPositionX: "0%"
-}, '-= 1');
+mm.add("(min-width: 480px)", () => {
+    const tl2 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".par-container1",
+            start: "-=50 700",
+            end: "bottom 700",
+            scrub: true,
+        }
+    });
+    tl2.to("#par-2023", {
+        stagger: 0.3,
+        backgroundPositionX: "0%"
+    });
+    tl2.to("#par-portfolio", {
+        stagger: 0.3,
+        backgroundPositionX: "0%"
+    }, '-= 1');
+    tl2.to("#par-par", {
+        stagger: 0.3,
+        backgroundPositionX: "0%"
+    }, '-= 1');
 
-gsap.to(".par-container1-learnmore p", {
-    scrollTrigger: {
-        trigger: ".par-container1-learnmore p",
-        start: "0 700",
-        end: "400 700",
-    },
-    opacity: 1,
-    y: '-50%'
+    gsap.to(".par-container1-learnmore p", {
+        scrollTrigger: {
+            trigger: ".par-container1-learnmore p",
+            start: "0 700",
+            end: "400 700",
+        },
+        opacity: 1,
+        y: '-50%'
+    });
+});
+mm.add("(max-width: 479px)", () => {
+    const tl2 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".par-container1",
+            start: "-=50 500",
+            end: "bottom 500",
+            scrub: true
+        }
+    });
+    tl2.to("#par-2023", {
+        stagger: 0.5,
+        backgroundPositionX: "0%"
+    });
+    tl2.to("#par-portfolio", {
+        stagger: 0.5,
+        backgroundPositionX: "0%"
+    });
+    tl2.to("#par-par", {
+        stagger: 0.5,
+        backgroundPositionX: "0%"
+    });
+
+    gsap.to(".par-container1-learnmore p", {
+        scrollTrigger: {
+            trigger: ".par-container1-learnmore p",
+            start: "top 700",
+            end: "400 700",
+        },
+        opacity: 1,
+        y: '-50%',
+        delay: 2
+    });
 });
 /* Content Container1 End */
 
