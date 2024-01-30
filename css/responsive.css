@@ -4,7 +4,15 @@
 .cursor {
     display: none;
 }
-
+/* Pre loader */
+.number {
+    font-size: 16px;
+}
+.loading {
+    padding-bottom: 5vh;
+    font-size: 14px;
+}
+/* Pre loader End */
 /* Header */
 
 header {
@@ -180,7 +188,7 @@ header {
     margin-bottom: 25px
 }
 .short-tip-content1 {
-    font-size: 22px;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
