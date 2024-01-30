@@ -182,8 +182,7 @@ mm.add("(max-width: 479px)", () => {
                 trigger: ".img-container-par",
                 start: "-500 70%",
                 end: "250 70%",
-                scrub: true,
-                markers: true
+                scrub: true
             }
         });
 });
