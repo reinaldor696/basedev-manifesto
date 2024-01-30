@@ -250,22 +250,57 @@ mm.add("(max-width: 479px)", () => {
 /* Content Container1 End */
 
 /* Content Container2 */
-const tl3 = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".content-container2",
-        start: "-=100 bottom",
-        end: "bottom bottom"
-    }
-});
+mm.add("(min-width: 480px)", () => {
+    const tl3 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".content-container2",
+            start: "-=100 bottom",
+            end: "bottom bottom"
+        }
+    });
 
-tl3.to(".content-container2-large-img", {
-    y: '-20vh',
-    duration: 0.5
-});
+    tl3.to(".content-container2-large-img", {
+        y: '-20vh',
+        duration: 0.5
+    });
 
-tl3.to(".content-container2-small-img", {
-    y: '-20vh',
-    duration: 0.5
+    tl3.to(".content-container2-small-img", {
+        y: '-20vh',
+        duration: 0.5
+    });
+});
+mm.add("(max-width: 479px)", () => {
+    
+
+    gsap.to(".content-container2-large-img", {
+        scrollTrigger: {
+            trigger: ".content-container2-large-img",
+            start: "top 900",
+            end: "bottom 900"
+        },
+        y: '-10vh',
+        duration: 0.5
+    });
+
+    gsap.to(".small-img1", {
+        scrollTrigger: {
+            trigger: ".small-img1",
+            start: "top 900",
+            end: "bottom 900"
+        },
+        y: '-10vh',
+        duration: 0.5
+    });
+
+    gsap.to(".small-img2", {
+        scrollTrigger: {
+            trigger: ".small-img2",
+            start: "top 900",
+            end: "bottom 900"
+        },
+        y: '-10vh',
+        duration: 0.5
+    });
 });
 
 const tl4 = gsap.timeline({
