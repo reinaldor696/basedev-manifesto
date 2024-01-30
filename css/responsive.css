@@ -178,7 +178,7 @@ header {
 .short-tip {
     display: flex;
     flex-direction: column;
-    margin-top: 55vh;
+    margin-top: 65vh;
     margin-bottom: -33vh;
 }
 
@@ -187,7 +187,7 @@ header {
     margin-bottom: 25px
 }
 .short-tip-content1 {
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
