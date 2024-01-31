@@ -412,7 +412,8 @@ mm.add("(min-width: 480px)", () => {
             trigger: ".list-1",
             start: "top 500",
             end: "bottom 500",
-            toggleActions: "play reverse restart reverse"
+            toggleActions: "play reverse restart reverse",
+            ease: "power1.out"
         }
     });
 
@@ -428,11 +429,12 @@ mm.add("(min-width: 480px)", () => {
     const tl8 = gsap.timeline({
         scrollTrigger: {
             trigger: ".list-2",
-            start: "top 500",
+            start: "-1 500",
             end: "bottom 500",
-            toggleActions: "play reverse restart reverse"
+            toggleActions: "play reverse restart reverse",
+            ease: "power1.out"
         }
-    }, "-=1");
+    });
 
     tl8.to(".list-2", {
         opacity: 1,
@@ -446,9 +448,10 @@ mm.add("(min-width: 480px)", () => {
     const tl9 = gsap.timeline({
         scrollTrigger: {
             trigger: ".list-3",
-            start: "top 500",
+            start: "-1 500",
             end: "bottom 500",
-            toggleActions: "play reverse restart reverse"
+            toggleActions: "play reverse restart reverse",
+            ease: "power1.out"
         }
     });
 
@@ -464,9 +467,10 @@ mm.add("(min-width: 480px)", () => {
     const tl10 = gsap.timeline({
         scrollTrigger: {
             trigger: ".list-4",
-            start: "top 500",
+            start: "-1 500",
             end: "bottom 500",
-            toggleActions: "play none none reverse"
+            toggleActions: "play none none reverse",
+            ease: "power1.out"
         }
     });
 
