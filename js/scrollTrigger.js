@@ -355,7 +355,7 @@ mm.add("(min-width: 480px)", () => {
     const tl11 = gsap.timeline({
         scrollTrigger: {
             trigger: ".our-service-scroll",
-            start: "center center",
+            start: "-100 center",
             end: "bottom center",
             scrub: true,
             pin: true
