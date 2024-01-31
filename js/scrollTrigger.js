@@ -413,7 +413,8 @@ mm.add("(min-width: 480px)", () => {
             start: "top 500",
             end: "bottom 500",
             toggleActions: "play reverse restart reverse",
-            ease: "power1.out"
+            ease: "power1.out",
+            duration: 1
         }
     });
 
@@ -432,7 +433,8 @@ mm.add("(min-width: 480px)", () => {
             start: "-1 500",
             end: "bottom 500",
             toggleActions: "play reverse restart reverse",
-            ease: "power1.out"
+            ease: "power1.out",
+            duration: 1
         }
     });
 
@@ -451,7 +453,8 @@ mm.add("(min-width: 480px)", () => {
             start: "-1 500",
             end: "bottom 500",
             toggleActions: "play reverse restart reverse",
-            ease: "power1.out"
+            ease: "power1.out",
+            duration: 1
         }
     });
 
@@ -470,7 +473,8 @@ mm.add("(min-width: 480px)", () => {
             start: "-1 500",
             end: "bottom 500",
             toggleActions: "play none none reverse",
-            ease: "power1.out"
+            ease: "power1.out",
+            duration: 1
         }
     });
 
@@ -490,7 +494,9 @@ mm.add("(max-width: 479px)", () => {
             trigger: ".list-1",
             start: "top 400",
             end: "bottom 400",
-            toggleActions: "play reverse restart reverse"
+            toggleActions: "play reverse restart reverse",
+            ease: "power1.out",
+            duration: 1
         }
     });
 
@@ -506,9 +512,11 @@ mm.add("(max-width: 479px)", () => {
     const tl8 = gsap.timeline({
         scrollTrigger: {
             trigger: ".list-2",
-            start: "top 400",
+            start: "-1 400",
             end: "bottom 400",
-            toggleActions: "play reverse restart reverse"
+            toggleActions: "play reverse restart reverse",
+            ease: "power1.out",
+            duration: 1
         }
     }, "-=1");
 
@@ -524,9 +532,11 @@ mm.add("(max-width: 479px)", () => {
     const tl9 = gsap.timeline({
         scrollTrigger: {
             trigger: ".list-3",
-            start: "top 400",
+            start: "-1 400",
             end: "bottom 400",
-            toggleActions: "play reverse restart reverse"
+            toggleActions: "play reverse restart reverse",
+            ease: "power1.out",
+            duration: 1
         }
     });
 
@@ -542,9 +552,11 @@ mm.add("(max-width: 479px)", () => {
     const tl10 = gsap.timeline({
         scrollTrigger: {
             trigger: ".list-4",
-            start: "top 400",
+            start: "-1 400",
             end: "bottom 400",
-            toggleActions: "play none none reverse"
+            toggleActions: "play none none reverse",
+            ease: "power1.out",
+            duration: 1
         }
     });
 
