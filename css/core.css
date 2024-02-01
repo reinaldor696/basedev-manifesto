@@ -170,7 +170,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  visibility: visible;
+  visibility: hidden;
 }
 .menu-content ul {
   display: flex;
