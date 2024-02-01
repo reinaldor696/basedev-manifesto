@@ -128,6 +128,7 @@ header {
   align-items: center;
   justify-content: flex-end;
   padding: 25px;
+  z-index: 1;
 }
 .logo-container img {
   opacity: 0;
@@ -140,6 +141,7 @@ header {
   align-items: center;
   justify-content: flex-end;
   padding: 25px;
+  z-index: 1;
 }
 .menu-container h2 {
   opacity: 0;
@@ -153,9 +155,32 @@ header {
   justify-content: flex-start;
   padding: 25px;
   margin-top: 8px;
+  z-index: 1;
 }
 .logo-menu-container img {
   opacity: 0;
+}
+
+.menu-content {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: visible;
+}
+.menu-content ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-content li {
+  font-size: 140px;
+  font-weight: bolder;
+  color: #fff;
 }
 /* Header End*/
 
