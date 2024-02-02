@@ -39,9 +39,16 @@ header {
 }
 
 .menu-content {
-    margin-top: 86vh;
+    margin-top: 81vh;
     width: 100vw;
-    height: 102vh;
+    height: 108vh;
+}
+.closed-menu-container {
+    margin-right: 5em;
+    margin-top: 0;
+}
+.list-container {
+    margin: 0;
 }
 .menu-content li {
     font-size: 50px;
