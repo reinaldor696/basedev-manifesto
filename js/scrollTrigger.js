@@ -93,9 +93,12 @@ function menuButton() {
     const menuButton = document.querySelector(".menu-button");
     const menuContent = document.querySelector(".menu-content");
     const menuButtonClosed = document.querySelector(".closed-menu");
+    const content = document.querySelector("#content1");
 
     menuButton.addEventListener("click", () => {
     menuContent.classList.add("visible");
+    
+    content.style.display = "none";
 
     const tl = gsap.timeline();
     
@@ -109,7 +112,7 @@ function menuButton() {
     
     tl.then(() => {
         menuButtonClosed.addEventListener("click", () => {
-
+            
             tl.set(".home-li, .portfolio-li, .about-li, contact-li, more-li", {y: 0});
 
             tl.to(".home-li, .portfolio-li, .about-li, .contact-li, .more-li", {
@@ -119,6 +122,7 @@ function menuButton() {
             });
 
             tl.then(() => {
+                content.style.display = "block";
                 menuContent.classList.remove("visible");
             });
         });

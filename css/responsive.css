@@ -37,6 +37,15 @@ header {
 .logo-menu-container img {
     width: 50%;
 }
+
+.menu-content {
+    margin-top: 86vh;
+    width: 100vw;
+    height: 102vh;
+}
+.menu-content li {
+    font-size: 50px;
+}
 /* Header End */
 
 /* Content Container1 */
