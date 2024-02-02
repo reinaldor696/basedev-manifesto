@@ -20,26 +20,26 @@ mouse();
 
 /* Pre Loader */
 function preLoader() {
-const tlPreLoader = gsap.timeline();
-const counter = document.querySelector(".counter");
+    const tlPreLoader = gsap.timeline();
+    const counter = document.querySelector(".counter");
 
-tlPreLoader.fromTo(counter,
-    { 
-        innerHTML: 0 
-    }, {
-        innerHTML: 100,
-        duration: 1,
-        onUpdate: () => {
-        counter.innerHTML = Math.round(counter.innerHTML);
-        }
-});
+    tlPreLoader.fromTo(counter,
+        { 
+            innerHTML: 0 
+        }, {
+            innerHTML: 100,
+            duration: 1,
+            onUpdate: () => {
+            counter.innerHTML = Math.round(counter.innerHTML);
+            }
+    });
 
-tlPreLoader.to(".loading p", {opacity: 0});
-tlPreLoader.to(".number h1", {y: "-100%", opacity: 0});
+    tlPreLoader.to(".loading p", {opacity: 0});
+    tlPreLoader.to(".number h1", {y: "-100%", opacity: 0});
 
-tlPreLoader.to(".pre-loader", {display: "none", duration: 0.5});
+    tlPreLoader.to(".pre-loader", {display: "none", duration: 0.5});
 
-tlPreLoader.to(".content", {display: "block"});
+    tlPreLoader.to(".content", {display: "block"});
 }
 preLoader();
 /* Pre Loader End*/
@@ -66,38 +66,81 @@ firstEffectHeader();
 
 
 function menuEffect() {
-const menuUp = document.querySelector('.menu-container');
+    const menuUp = document.querySelector('.menu-container');
 
-menuUp.addEventListener("mouseover", () => {
-    const tlMenu = gsap.timeline();
+    menuUp.addEventListener("mouseover", () => {
+        const tlMenu = gsap.timeline();
 
-    tlMenu.set(menuUp, {
-        y: '-100%',
-        duration: 1,
-        opacity: 0,
+        tlMenu.set(menuUp, {
+            y: '-100%',
+            duration: 1,
+            opacity: 0,
+        });
+        tlMenu.to(menuUp, {
+            y: 0,
+            opacity: 0,
+            duration: 1
+        }, '-=0.5');
+        tlMenu.to(menuUp, {
+            opacity: 1,
+            duration: 1
+        }, '-=0.5');
     });
-    tlMenu.to(menuUp, {
-        y: 0,
-        opacity: 0,
-        duration: 1
-    }, '-=0.5');
-    tlMenu.to(menuUp, {
-        opacity: 1,
-        duration: 1
-    }, '-=0.5');
-});
 }
 menuEffect();
 
-function boton() {
-    const boton = document.getElementsByClassName("logo-container");
+function menuButton() {
+    const menuButton = document.querySelector(".menu-button");
+    const menuContent = document.querySelector(".menu-content");
 
-boton.onclick = function() {
-    alert("¡Hola!");
-};
+    menuButton.addEventListener("click", () => {
 
+        menuContent.classList.add("visible");
+
+        const tl = gsap.timeline();
+
+        tl.set(".home-li", {y: "100vh"});
+        tl.set(".portfolio-li", {y: "100vh"});
+        tl.set(".about-li", {y: "100vh"});
+        tl.set(".contact-li", {y: "100vh"});
+        tl.set(".more-li", {y: "100vh"});
+
+        tl.to(".home-li", {y: 0, duration: 1, delay: 0.1});
+        tl.to(".portfolio-li", {y: 0, duration: 1, delay: 0.2}, "-=1");
+        tl.to(".about-li", {y: 0, duration: 1, delay: 0.3}, "-=1");
+        tl.to(".contact-li", {y: 0, duration: 1, delay: 0.4}, "-=1");
+        tl.to(".more-li", {y: 0, duration: 1, delay: 0.5}, "-=1");
+    });
 }
-boton();
+menuButton();
+
+function menuButton2() {
+    
+    const menuContent = document.querySelector(".menu-content");
+    const menuButtonClosed = document.querySelector(".closed-menu");
+
+    menuButtonClosed.addEventListener("click", () => {
+        
+        const tl = gsap.timeline();
+
+        tl.set(".home-li", {y: 0});
+        tl.set(".portfolio-li", {y: 0});
+        tl.set(".about-li", {y: 0});
+        tl.set(".contact-li", {y: 0});
+        tl.set(".more-li", {y: 0});
+
+        tl.to(".home-li", {y: "-100vh", duration: 1, delay: 0.1});
+        tl.to(".portfolio-li", {y: "-100vh", duration: 1, delay: 0.2}, "-=1");
+        tl.to(".about-li", {y: "-100vh", duration: 1, delay: 0.3}, "-=1");
+        tl.to(".contact-li", {y: "-100vh", duration: 1, delay: 0.4}, "-=1");
+        tl.to(".more-li", {y: "-100vh", duration: 1, delay: 0.5}, "-=1");
+
+        tl.then(() => {
+            menuContent.classList.remove("visible");
+        });
+    });
+}
+menuButton2();
 
 /* Header End*/
 
@@ -299,6 +342,7 @@ function imgEffectContainer2() {
             duration: 0.5
         });
     });
+
     mm.add("(max-width: 479px)", () => {
         gsap.to(".content-container2-large-img", {
             scrollTrigger: {
@@ -436,25 +480,25 @@ shortTip();
 function titleContainer4() {
     const tl6 = gsap.timeline();
 
-tl6.fromTo(".container4-title", {
-    x: "-100vw",
-    y: 0,
-    duration: 10,
-    ease: "linear",
-    yoyo: true
-}, {
-    x: 0,
-    y: 0,
-    duration: 10,
-    ease: "linear",
-    yoyo: true
-});
+    tl6.fromTo(".container4-title", {
+        x: "-100vw",
+        y: 0,
+        duration: 10,
+        ease: "linear",
+        yoyo: true
+    }, {
+        x: 0,
+        y: 0,
+        duration: 10,
+        ease: "linear",
+        yoyo: true
+    });
 
-tl6.repeat(-1);
+    tl6.repeat(-1);
 }
 titleContainer4();
 
-function lisContainer4() {
+function listContainer4() {
     mm.add("(min-width: 480px)", () => {
         const tl7 = gsap.timeline({
             scrollTrigger: {
@@ -619,6 +663,7 @@ function lisContainer4() {
         }, "-= 1");
     });
 }
+listContainer4();
 
 /* Content Container4 End */
 
