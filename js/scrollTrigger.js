@@ -92,56 +92,40 @@ menuEffect();
 function menuButton() {
     const menuButton = document.querySelector(".menu-button");
     const menuContent = document.querySelector(".menu-content");
+    const menuButtonClosed = document.querySelector(".closed-menu");
 
     menuButton.addEventListener("click", () => {
+    menuContent.classList.add("visible");
 
-        menuContent.classList.add("visible");
+    const tl = gsap.timeline();
+    
+    tl.set(".home-li, .portfolio-li, .about-li, .contact-li, .more-li", {y: "100vh"});
 
-        const tl = gsap.timeline();
+    tl.to(".home-li, .portfolio-li, .about-li, .contact-li, .more-li", {
+        y: 0,
+        duration: 1,
+        stagger: 0.1,
+    });  
+    
+    tl.then(() => {
+        menuButtonClosed.addEventListener("click", () => {
 
-        tl.set(".home-li", {y: "100vh"});
-        tl.set(".portfolio-li", {y: "100vh"});
-        tl.set(".about-li", {y: "100vh"});
-        tl.set(".contact-li", {y: "100vh"});
-        tl.set(".more-li", {y: "100vh"});
+            tl.set(".home-li, .portfolio-li, .about-li, contact-li, more-li", {y: 0});
 
-        tl.to(".home-li", {y: 0, duration: 1, delay: 0.1});
-        tl.to(".portfolio-li", {y: 0, duration: 1, delay: 0.2}, "-=1");
-        tl.to(".about-li", {y: 0, duration: 1, delay: 0.3}, "-=1");
-        tl.to(".contact-li", {y: 0, duration: 1, delay: 0.4}, "-=1");
-        tl.to(".more-li", {y: 0, duration: 1, delay: 0.5}, "-=1");
+            tl.to(".home-li, .portfolio-li, .about-li, .contact-li, .more-li", {
+                y: "-100vh",
+                duration: 1,
+                stagger: 0.1,
+            });
+
+            tl.then(() => {
+                menuContent.classList.remove("visible");
+            });
+        });
+    });
     });
 }
 menuButton();
-
-function menuButton2() {
-    
-    const menuContent = document.querySelector(".menu-content");
-    const menuButtonClosed = document.querySelector(".closed-menu");
-
-    menuButtonClosed.addEventListener("click", () => {
-        
-        const tl = gsap.timeline();
-
-        tl.set(".home-li", {y: 0});
-        tl.set(".portfolio-li", {y: 0});
-        tl.set(".about-li", {y: 0});
-        tl.set(".contact-li", {y: 0});
-        tl.set(".more-li", {y: 0});
-
-        tl.to(".home-li", {y: "-100vh", duration: 1, delay: 0.1});
-        tl.to(".portfolio-li", {y: "-100vh", duration: 1, delay: 0.2}, "-=1");
-        tl.to(".about-li", {y: "-100vh", duration: 1, delay: 0.3}, "-=1");
-        tl.to(".contact-li", {y: "-100vh", duration: 1, delay: 0.4}, "-=1");
-        tl.to(".more-li", {y: "-100vh", duration: 1, delay: 0.5}, "-=1");
-
-        tl.then(() => {
-            menuContent.classList.remove("visible");
-        });
-    });
-}
-menuButton2();
-
 /* Header End*/
 
 /* Content Container1 */
