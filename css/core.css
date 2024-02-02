@@ -191,6 +191,7 @@ header {
 .closed-menu {
   border: none;
   cursor: pointer;
+  background-color: transparent;
 }
 .menu-content ul {
   display: flex;
